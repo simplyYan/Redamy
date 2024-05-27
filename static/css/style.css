@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Prosto+One&display=swap');
+
+
+body {
+  transition: background-color 0.5s, color 0.5s;
+  font-family: 'Prosto One';
+}
+
+body.light-mode {
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+body.dark-mode {
+  background-color: #212529;
+  color: #f8f9fa;
+}
+
+.chatbox {
+  background-color: #ffffff;
+  border: 1px solid #ced4da;
+  transition: background-color 0.5s, border-color 0.5s;
+}
+
+body.dark-mode .chatbox {
+  background-color: #343a40;
+  border-color: #495057;
+}
+
+#chat-output {
+  height: 400px;
+  overflow-y: auto;
+  border: 1px solid #ced4da;
+  padding: 10px;
+  background-color: #ffffff;
+  transition: background-color 0.5s, border-color 0.5s;
+}
+
+body.dark-mode #chat-output {
+  background-color: #495057;
+  border-color: #6c757d;
+  color: black;
+}
+
+#user-input {
+  transition: background-color 0.5s, border-color 0.5s;
+}
+
+body.dark-mode #user-input {
+  background-color: #343a40;
+  border-color: #495057;
+  color: #f8f9fa;
+}
+
+.input-group-text,
+.btn-primary,
+.btn-secondary {
+  transition: background-color 0.5s, border-color 0.5s;
+}
+
+body.dark-mode .btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+body.dark-mode .btn-secondary {
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
